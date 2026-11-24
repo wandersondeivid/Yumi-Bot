@@ -1,0 +1,68 @@
+🌸 YUMI BOT — INSTALAÇÃO PELO TERMUX
+Desenvolvido por WSZIN
+
+1. ATUALIZAR O TERMUX
+
+pkg update && pkg upgrade -y
+
+2. INSTALAR AS FERRAMENTAS
+
+pkg install nodejs-lts git ffmpeg python make clang -y
+
+3. BAIXAR A YUMI BOT
+
+git clone https://github.com/wandersondeivid/Yumi-Bot.git
+
+4. ENTRAR NA PASTA
+
+cd Yumi-Bot
+
+5. INSTALAR AS DEPENDÊNCIAS
+
+npm install
+
+6. CONFIGURAR A BOT
+
+nano config.js
+
+Configure o número do proprietário e os demais dados necessários.
+
+Para salvar:
+CTRL + O
+Enter
+CTRL + X
+
+7. INICIAR A YUMI BOT
+
+npm start
+
+8. CONECTAR AO WHATSAPP
+
+Siga as instruções exibidas no terminal e conecte sua conta pelo WhatsApp.
+
+9. COMANDOS PARA TESTAR
+
+?menu
+?menuadm
+?menudono
+
+10. REINICIAR A BOT
+
+Entre na pasta do projeto:
+
+cd ~/Yumi-Bot
+
+Inicie novamente:
+
+npm start
+
+OBSERVAÇÕES
+
+- Não compartilhe sua sessão do WhatsApp.
+- Não publique arquivos de autenticação.
+- Não compartilhe sua APIKEY.
+- Mantenha suas configurações privadas.
+- Utilize Node.js 20 ou superior.
+
+🌸 YUMI BOT
+Desenvolvido por WSZIN.
