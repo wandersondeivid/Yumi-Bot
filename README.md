@@ -1,33 +1,68 @@
-# YUMI BOT
+🌸 YUMI BOT — INSTALAÇÃO
 
-Projeto organizado com comandos separados por categoria.
+Desenvolvido por WSZIN
 
-## Estrutura dos comandos
+1. Atualizar o Termux
 
-- `comandos/dono/`: comandos exclusivos dos proprietários
-- `comandos/adm/`: comandos administrativos
-- `comandos/gerais/`: comandos gerais e menus públicos
-- `comandos/jogos/`: jogos
-- `comandos/diversao/`: brincadeiras e entretenimento
-- `comandos/midia/`: imagens, vídeos e figurinhas
+```bash
+pkg update && pkg upgrade -y
+```
 
-O carregador procura arquivos `.js` recursivamente dentro de `comandos/` e monitora as subpastas para recarga automática.
+2. Instalar os requisitos
 
-## Instalação no Termux
+```bash
+pkg install nodejs-lts git ffmpeg python make clang -y
+```
 
-1. Entre na pasta do projeto.
-2. Execute `npm install`.
-3. Inicie com `npm start`.
+3. Baixar a Yumi Bot
 
-A pasta `node_modules` e arquivos de sessão não são incluídos neste ZIP. A sessão do WhatsApp será criada novamente pelo Baileys na primeira conexão.
+```bash
+git clone https://github.com/wandersondeivid/Yumi-Bot.git
+```
 
-## Proprietários
+4. Entrar na pasta
 
-O dono principal está configurado em `config.js`. Proprietários adicionais ficam em `banco-de-dados/donos.json`.
+```bash
+cd Yumi-Bot
+```
 
-Comandos:
-- `?adddono NUMERO`
-- `?tirardono NUMERO`
-- `?listdonos`
+5. Instalar as dependências
 
-Somente o dono principal pode adicionar, remover ou listar proprietários adicionais.
+```bash
+npm install
+```
+
+6. Configurar a Yumi Bot
+
+```bash
+nano config.js
+```
+
+Configure o número do proprietário e os demais dados necessários.
+
+Para salvar:
+
+- CTRL + O e Enter
+- CTRL + X para sair
+
+7. Iniciar a Yumi Bot
+
+```bash
+npm start
+```
+
+8. Conectar ao WhatsApp
+
+Siga as instruções exibidas no terminal para conectar sua conta.
+
+9. Comandos para testar
+
+```text
+?menu
+?menuadm
+?menudono
+```
+
+---
+
+🌸 YUMI BOT — Desenvolvido por WSZIN.
